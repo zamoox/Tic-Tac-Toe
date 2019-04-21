@@ -1,0 +1,131 @@
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+#intro h1 {
+	color:grey;
+	font-family:Helvetica;
+	font-size:32px;
+	line-height: 0.6;
+	text-transform:uppercase;
+	text-align: center;
+
+}
+
+#intro h1:hover {
+	transition: 1.5s;
+	color: black;
+	cursor: pointer; 
+}
+
+
+#intro h6 {
+	color:grey;
+	font-family:Helvetica;
+	font-size:8px;
+	text-transform:uppercase;
+	opacity:0.5;
+}
+
+h4 {
+	display: inline;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: 100;
+	opacity: 0.7;
+	outline: none;
+} 
+
+
+
+
+#root {
+	margin-top: 30px;
+} 
+.square {
+	background: grey;
+	height: 150px;
+	width: 150px;
+	border: 3px solid white;
+	border-radius: 15px;
+	float: left;
+	box-sizing: border-box;
+	opacity: 0.7;
+	text-transform: uppercase;
+	font-size: 96px;
+	text-align: center;
+	font-family: Helvetica, Myriad Pro, Arial, sans-serif; 
+	outline: none;
+	transition: 0.4s;
+} 
+
+.square:hover {
+	outline: none;
+	opacity: 0.5;
+	background-color: red;
+}
+
+.board-wrapper {
+	display: block;
+	position: relative;
+	margin: 35px auto;
+	height: 450px;
+	width: 450px;
+	cursor: default;
+}
+
+.board-wrapper .disabled {
+	height: 100%;
+	width: 100%;
+	pointer-events: none;
+	background: black;
+	border-radius: 15px;
+}
+
+.status-bar {
+	width: 350px;
+	margin: auto;
+	border: 1px dotted grey;
+	position: relative;
+	text-align: center;
+
+} 
+
+.button-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+}
+
+.button-wrapper button {
+	background: grey;
+	height: 60px;
+	width: 240px;
+	opacity: 1;
+	z-index: 2;
+	outline: none;
+	transition: 0.4s;
+	cursor: default;
+}
+
+.button-wrapper button:hover {
+	background-color: darkgray;
+}
+
+.button-wrapper button h4{
+	opacity: 0.9;
+	color: white;
+	font-weight: 300;
+}
+
+.game {
+	margin: auto;
+} 
+
+
+
